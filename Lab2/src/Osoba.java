@@ -1,7 +1,7 @@
 public class Osoba {
-    private String imie;
-    private String nazwisko;
-    private int wiek;
+    private final String imie;
+    private final String nazwisko;
+    private final int wiek;
 
     Osoba(String imie, String nazwisko, int wiek){
         this.imie=imie;
@@ -19,5 +19,9 @@ public class Osoba {
 
     public int getWiek() {
         return wiek;
+    }
+
+    public String toString(){
+        return "Imie: " + this.getImie() + "Nazwisko: " + this.getNazwisko();
     }
 }

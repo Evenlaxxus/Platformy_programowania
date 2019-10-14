@@ -14,5 +14,10 @@ public class Pracownik extends Osoba {
     public double getPensja() {
         return pensja;
     }
+
+    public String toString(){
+        return "Imie: " + this.getImie() + "\nNazwisko: " + this.getNazwisko() + "\nWiek: " + this.getWiek() +
+                "\nStanowisko: " + this.getStanowisko() + "\nPensja: " + this.getPensja() + "\n";
+    }
 }
 
