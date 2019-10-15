@@ -2,7 +2,7 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.lang.Iterable;
 
-public class Firma implements Iterable{
+public class Firma implements Iterable<Pracownik>{
     private LinkedList<Pracownik> pracownicy;
 
     Firma(){
@@ -22,11 +22,33 @@ public class Firma implements Iterable{
         }
     }
 
+    public double srednia_pensja(){
+        double s=0;
+        for(Pracownik p: this){
+           s+=p.getPensja();
+
+        }
+        return s/this.liczba_pracownikow();
+    }
+
+    public double srednia_pensja(Stanowisko s){
+        double sum=0;
+        int licznik=0;
+        for (Iterator<Pracownik> iter = this.iterator(s); iter.hasNext(); ) {
+            Pracownik p = iter.next();
+            sum+=p.getPensja();
+            licznik++;
+        }
+
+        return sum/licznik;
+    }
 
     @Override
     public Iterator<Pracownik> iterator() {
         return this.pracownicy.iterator();
-
     }
-    
+
+    public Iterator<Pracownik> iterator(Stanowisko s){
+        return this.pracownicy.stream().filter(x->x.getStanowisko()==s).iterator();
+    }
 }
