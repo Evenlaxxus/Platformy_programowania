@@ -16,8 +16,7 @@ public class Pracownik extends Osoba {
     }
 
     public String toString(){
-        return "Imie: " + this.getImie() + "\nNazwisko: " + this.getNazwisko() + "\nWiek: " + this.getWiek() +
-                "\nStanowisko: " + this.getStanowisko() + "\nPensja: " + this.getPensja() + "\n";
+        return super.toString() + "Stanowisko: " + this.getStanowisko() + "\nPensja: " + this.getPensja() + "\n";
     }
 }
 

@@ -22,6 +22,6 @@ public class Osoba {
     }
 
     public String toString(){
-        return "Imie: " + this.getImie() + "Nazwisko: " + this.getNazwisko();
+        return "Imie: " + this.getImie() + "\nNazwisko: " + this.getNazwisko() + "\nWiek: " + this.getWiek() + "\n";
     }
 }
