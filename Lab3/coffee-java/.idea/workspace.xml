@@ -2,22 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea9b190a-d9ec-4343-aaef-ffe03e41c6c3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../Lab2/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Lab2/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab2/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Lab2/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Lab2/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Lab2/Lab2.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Lab2/out/production/Lab2/Firma.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab2/out/production/Lab2/Firma.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Lab2/out/production/Lab2/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab2/out/production/Lab2/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Lab2/out/production/Lab2/Osoba.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab2/out/production/Lab2/Osoba.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Lab2/out/production/Lab2/Pracownik.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab2/out/production/Lab2/Pracownik.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Lab2/out/production/Lab2/Stanowisko.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab2/out/production/Lab2/Stanowisko.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Lab2/src/Firma.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab2/src/Firma.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Lab2/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab2/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Lab2/src/Osoba.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab2/src/Osoba.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Lab2/src/Pracownik.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab2/src/Pracownik.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Lab2/src/Stanowisko.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Lab2/src/Stanowisko.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Hibernate_5_4_5_5_4_5.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coffee.iml" beforeDir="false" afterPath="$PROJECT_DIR$/coffee.iml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,6 +42,13 @@
     </expand>
     <select />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
@@ -66,16 +60,26 @@
     </option>
   </component>
   <component name="ProjectId" id="1SX0Bm7KvRcFtpAM9bu4a75mcrf" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="sqlserver" />
+    <property name="JPA.DatabaseSchemaImportDialog" value="f9236ea4-c133-4dbe-a870-d03062a36979" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Lab2" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="ImportMappingsDialog.RecentPackages">
+      <recent name="pl.poznan.put.cie.coffee" />
+      <recent name="" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -89,9 +93,35 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.aCoffeeMain">
+  <component name="RunManager" selected="Application.CreateCoffeeDesc">
     <configuration name="CoffeeMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pl.poznan.put.cie.coffee.CoffeeMain" />
+      <module name="coffee" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.poznan.put.cie.coffee.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreateCoffeeDesc" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pl.poznan.put.cie.coffee.CreateCoffeeDesc" />
+      <module name="coffee" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.poznan.put.cie.coffee.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreateCoffeeDescription" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pl.poznan.put.cie.coffee.CreateCoffeeDescription" />
       <module name="coffee" />
       <extension name="coverage">
         <pattern>
@@ -118,7 +148,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CreateCoffeeDesc" />
         <item itemvalue="Application.aCoffeeMain" />
+        <item itemvalue="Application.CreateCoffeeDescription" />
         <item itemvalue="Application.CoffeeMain" />
       </list>
     </recent_temporary>
@@ -130,12 +162,12 @@
           <expand>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@d00836f8" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@31889c65" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@d00836f8" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@662d5053" type="9fbbdea:ServiceModel$ServiceNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@31889c65" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@4110af7a" type="9fbbdea:ServiceModel$ServiceNode" />
             </path>
           </expand>
           <select />
@@ -155,6 +187,7 @@
       <updated>1571694499522</updated>
       <workItem from="1571694503023" duration="1179000" />
       <workItem from="1572086890871" duration="2384000" />
+      <workItem from="1572089621204" duration="3861000" />
     </task>
     <servers />
   </component>
@@ -166,7 +199,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
