@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea9b190a-d9ec-4343-aaef-ffe03e41c6c3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Hibernate_5_4_5_5_4_5.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coffee.iml" beforeDir="false" afterPath="$PROJECT_DIR$/coffee.iml" afterDir="false" />
-    </list>
+    <list default="true" id="ea9b190a-d9ec-4343-aaef-ffe03e41c6c3" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,7 +183,7 @@
       <updated>1571694499522</updated>
       <workItem from="1571694503023" duration="1179000" />
       <workItem from="1572086890871" duration="2384000" />
-      <workItem from="1572089621204" duration="3861000" />
+      <workItem from="1572089621204" duration="3936000" />
     </task>
     <servers />
   </component>
