@@ -54,7 +54,8 @@ public class Main extends Application {
         final ComboBox chartComboBox = new ComboBox();
         chartComboBox.getItems().addAll(
                 "Line Chart",
-                "Scatter Chart"
+                "Scatter Chart",
+                "Bubble Chart"
         );
 
         chartComboBox.setValue("Line Chart");
@@ -71,6 +72,7 @@ public class Main extends Application {
         yAxis.setSide(Side.LEFT);
         final LineChart<Number,Number> lc = new LineChart<Number,Number>(xAxis,yAxis);
         final ScatterChart<Number,Number> sc = new ScatterChart<Number,Number>(xAxis,yAxis);
+        final BubbleChart<Number,Number> bc = new BubbleChart<Number,Number>(xAxis,yAxis);
 
         // setup chart
         xAxis.setLabel("X");
@@ -95,11 +97,17 @@ public class Main extends Application {
         //zad1 c
         for (int i=0; i<5; i++) series3.getData().add(new XYChart.Data<Number, Number>(i, Math.pow(i,2)-i+3));
 
+
         lc.getData().add(series1);
+//        bc.getData().add(series1);
         sc.getData().add(series1);
+
         lc.getData().add(series2);
+//        bc.getData().add(series2);
         sc.getData().add(series2);
+
         lc.getData().add(series3);
+//        bc.getData().add(series3);
         sc.getData().add(series3);
 
         button.setOnAction(new EventHandler<ActionEvent>() {
@@ -109,6 +117,7 @@ public class Main extends Application {
                     for (int i=0; i<5; i++) series4.getData().add(new XYChart.Data<Number, Number>(i, Double.parseDouble(a.getText())*Math.pow(i,2)+Double.parseDouble(b.getText())*i+Double.parseDouble(c.getText())));
                     lc.getData().add(series4);
                     sc.getData().add(series4);
+                    bc.getData().add(series4);
 
                 }
             }
@@ -118,12 +127,34 @@ public class Main extends Application {
             @Override
             public void handle(ActionEvent e) {
 
-                if(chart_name=="Line Chart"){
-                    grid.getChildren().remove(sc);
-                    grid.add(lc, 0, 0);
-                }else if(chart_name=="Scatter Chart"){
-                    grid.getChildren().remove(lc);
-                    grid.add(sc, 0, 0);
+                switch (chart_name) {
+                    case "Line Chart":
+                        if(grid.getChildren().contains(sc)){
+                            grid.getChildren().remove(sc);
+
+                        }else if(grid.getChildren().contains(bc)){
+                            grid.getChildren().remove(bc);
+                        }
+                        grid.add(lc, 0, 0);
+                        break;
+                    case "Scatter Chart":
+                        if(grid.getChildren().contains(lc)){
+                            grid.getChildren().remove(lc);
+
+                        }else if(grid.getChildren().contains(bc)){
+                            grid.getChildren().remove(bc);
+                        }
+                        grid.add(sc, 0, 0);
+                        break;
+                    case "Bubble Chart":
+                        if(grid.getChildren().contains(sc)){
+                            grid.getChildren().remove(sc);
+
+                        }else if(grid.getChildren().contains(lc)){
+                            grid.getChildren().remove(lc);
+                        }
+                        grid.add(bc, 0, 0);
+                        break;
                 }
             }
         });

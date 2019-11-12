@@ -18,7 +18,7 @@ class CreateCoffeeDesc{
         }
 
         CreateCoffeeDesc createCoffe = new CreateCoffeeDesc();
-        createCoffe.addCoffeDesc("Colombian", "Dobra kawucha");
+        createCoffe.addCoffeDesc("kawa", "Dobra");
 
     }
 
