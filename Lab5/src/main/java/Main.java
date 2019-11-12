@@ -43,8 +43,24 @@ public class Main {
         }
 
         Scanner scanner = new Scanner(System.in);
-        String querystr = scanner.nextLine();
-        Query q = new QueryParser("name", analyzer).parse(querystr);
+
+        String querystr1 = scanner.nextLine();
+        String querystr2 = scanner.nextLine();
+
+        //a
+//       Query q = new QueryParser("name", analyzer).parse(querystr1 + " NOT " + querystr2);
+
+        //b
+//        Query q = new QueryParser("name", analyzer).parse("Fotograficzny AND (S OR M)");
+
+        //c
+//        Query q = new QueryParser("category", analyzer).parse(querystr1+"*");
+
+        //d
+        Query q = new QueryParser("id", analyzer).parse(querystr1+"~2");
+
+        //e
+//        Query q = new QueryParser("price", analyzer).parse("[" +querystr1 + " TO " + querystr2 + "]");
 
 
         int hitsPerPage = 10;
@@ -58,7 +74,7 @@ public class Main {
         for (int i = 0; i < hits.length; ++i) {
             int docId = hits[i].doc;
             Document d = searcher.doc(docId);
-            System.out.println((i+1) + ". " + d.get("id") + "\t" + d.get("name")  + "\t" + d.get("price"));
+            System.out.println((i+1) + ". " + d.get("id") + "\t" + d.get("name")  + "\t" + d.get("price") + "\t" + d.get("category"));
         }
     }
 
