@@ -7,7 +7,7 @@ public class Cells implements Iterable<Cell> {
 	protected HashSet<Cell> cells;
 
 	public Cells(Cell... cells) {
-		this.cells = (HashSet<Cell>) Arrays.asList(cells);
+		this.cells = new HashSet<Cell>(Arrays.asList(cells));
 	}
 
 	public Cells() {
