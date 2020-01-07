@@ -45,13 +45,33 @@ def count_most_frequent(text):
     return c.most_common(20)
 
 
+def zad7(word_list):
+    word_list = word_list.split()
+    anagram_list = []
+    length = 0
+    for word1 in word_list:
+        for word2 in word_list:
+            if word1 != word2 and sorted(word1) == sorted(word2):
+                if len(word1) > length:
+                    anagram_list = [word1, word2]
+                    length = len(word1)
+                    print((word1,word2))
+    return anagram_list
+
+
 def newMain():
     increment([1, 2, 3, 4])
     print(iloczyn([1, 2, 3, 4]))
     print(palindrom("Tolo ma samolot"))
     print(tokenize("To be, or not to be - that is the question [...]"))
     print(remove_stop_words(("ani", "bardziej", "konstantynopolitańczykowianeczka", "aa")))
-    print(count_most_frequent("asd asd asd dsf ani"))
+    with open('trurl.txt', encoding='UTF-8') as input_file:
+        trurl = input_file.read()
+    print(count_most_frequent(trurl))
+    with open('unixdict.txt', encoding='UTF-8') as input_file:
+        unixdict = input_file.read()
+    print(zad7(unixdict))
+
 
 if __name__ == "__main__":
     newMain()
